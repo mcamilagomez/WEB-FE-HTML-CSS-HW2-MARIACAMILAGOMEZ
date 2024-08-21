@@ -1,7 +1,7 @@
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #000000;
-    background-color:#E4F6FF ;
+    background-color: #F4F4F9; /* Fondo general */
+    color: #2C3E50;
 }
 
 
@@ -12,15 +12,14 @@ body {
 }
 
 nav{
-    position: fixed;
     top: 10;
     left: 10;
     right: 10;
-    height: 70px;
-    width:99%;
-    background-color:#cfcfcf;
+    height: 100px;
+    width:100%;
     z-index: 100;
-    color: #000000;
+    background-color: #2C3E50; /* Header */
+    color: #FFFFFF;
     border-radius: 4px;
 }
 
@@ -41,6 +40,18 @@ nav .nav-bar{
     align-items: center;
 }
 
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea "Contact Us" a la derecha */
+}
+
 .nav-bar .nav-links li{
     margin: 0 5px;
     list-style: none;
@@ -50,7 +61,7 @@ nav .nav-bar{
     position: relative;
     font-size: 17px;
     font-weight: 400;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px;
 }
@@ -74,6 +85,7 @@ nav .nav-bar{
     opacity: 1;
 }
 
+
 /*Grid*/
 .grid-container {
     display: grid;
@@ -84,23 +96,25 @@ nav .nav-bar{
     gap: 10px;
     row-gap: 10px;
     padding: 10;
-    position: relative;
-    padding-top: 80px;
+    padding-top: 10px;
 }
 
 .grid-item {
-    background-color: #cfd0d2;
-    color: rgb(9, 8, 8);
-    padding: 20px;
+    background-color: #FFFFFF; /* Fondo de grids */
+    border: 1px solid #D1D1D1;
+    padding: 10px;
     text-align: justify;
     border-radius: 4px;
+    height: auto; 
+    margin: 0;
 }
 
 .item-1 { /*section 1*/
     grid-column: 2 / 5;
+    margin: 0;
     grid-row: span 1;
     font-size: 20px;
-    height: 70px;
+    height: 60px;
 }
 
 .item-2 { /*aside*/
@@ -117,10 +131,11 @@ nav .nav-bar{
 
 .item-4 {/*section 3*/
     margin-top: 1px;
-    position: relative;
+    display: flex;
     grid-column: 3 / 5;
     grid-row: 2 / 3;
-    justify-content:flex-end;
+    justify-content:center;
+    align-items: center;
 }
 
 .item-5 { /*section 4*/
@@ -138,46 +153,68 @@ nav .nav-bar{
 }
 .title {
     text-align: center;
-    border: 2px solid #ccc; 
+    border: 2px solid #1e2a37; 
     padding: 15px; /*borde interno*/
     margin-top: 20px; /* Separación superior con el contenido anterior */
-    background-color: #dbdbdb; /* Fondo ligeramente gris */
+    background-color: #2C3E50; /* Fondo ligeramente gris */
     border-radius: 8px; /* Esquinas redondeadas */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.159); /* Sombra suave */
+    color: #ffffff;
 }
 
 .testimonio {
     border: 2px solid #ccc; 
-    padding: 15px; /*borde interno*/
-    margin-top: 20px; /* Separación superior con el contenido anterior */
-    background-color: #dbdbdb; /* Fondo ligeramente gris */
-    border-radius: 8px; /* Esquinas redondeadas */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 15px; 
+    margin-top: 20px; 
+    background-color: #dbdbdb; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}  
+
+.main-title img,h4{
+    display: inline-block;
+    vertical-align: middle; 
+    color: #000000;
 }
 
-.testimonio h4 {
-    margin: 0; /* Eliminar márgenes */
-    font-size: 1.2em; /* Tamaño de fuente para el nombre */
-    color: #333; /* Color de texto oscuro */
-}
 
 .testimonio h5 { 
-    margin: 10px 0 0 0; /* Separación superior */
-    font-size: 1em; /* Tamaño de fuente para el testimonio */
-    color: #555; /* Color de texto más claro */
-    font-style: italic; /* Estilo cursiva para el testimonio */
+    margin: 10px 0 0 0;
+    font-size: 1em;
+    color: #555; 
+    font-style: italic; 
 }
 
+.main-grid {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.main-grid img {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.text-container {
+    background-color: #f4f4f9; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(107, 107, 107, 0.36); 
+    flex: 1; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 
 /*FOOTER*/
 
 footer {
     margin-top: 10px;
-    background-color: #cfcfcf;
-    color: #000000;
+    background-color: #34495E; /* Footer */
+    color: #FFFFFF;
     text-align: center;
     padding: 20px;
     position: relative;
+    border-radius: 4px;
 }
 
 footer a {
