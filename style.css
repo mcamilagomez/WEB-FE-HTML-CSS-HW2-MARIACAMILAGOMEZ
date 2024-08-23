@@ -89,7 +89,7 @@ nav .nav-bar{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* Two equal columns */
-    grid-template-rows: auto;
+    grid-template-rows: 2fr, 2fr, 2fr;
     /* Four equal rows */
     gap: 10px;
     row-gap: 10px;
@@ -142,6 +142,7 @@ nav .nav-bar{
     list-style: none;
     text-align: left;
     padding-left: 0;
+    margin-top: 20px;
 }
 .item-4 {/*section 3*/
     margin-top: 1px;
@@ -316,6 +317,6 @@ input, textarea{
     border-radius: 8px; 
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.159); 
     color: #2C3E50;
-    width: 70%;
+    width: 55%;
     margin-bottom: 10px;
 }
