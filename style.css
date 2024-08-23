@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
 body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Moderustic", sans-serif;
     background-color: #F4F4F9; 
     color: #2C3E50;
 }
@@ -17,7 +18,7 @@ nav{
     left: 10;
     right: 10;
     height: 100px;
-    background-color: #2C3E50; /* Header */
+    background-color: #2C3E50; 
     color: #FFFFFF;
     border-radius: 4px;
     width: 100%;
@@ -34,7 +35,7 @@ nav .nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15px; /* Ajusta el padding si es necesario */
+    padding: 0 15px; 
     box-sizing: border-box;
     max-width: none;
 }
@@ -89,7 +90,7 @@ nav .nav-bar{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* Two equal columns */
-    grid-template-rows: 2fr, 2fr, 2fr;
+    grid-template-rows: 100px 250px 230px;
     /* Four equal rows */
     gap: 10px;
     row-gap: 10px;
@@ -99,7 +100,7 @@ nav .nav-bar{
 }
 
 .grid-item {
-    background-color: #FFFFFF; /* Fondo de grids */
+    background-color: #FFFFFF; 
     border: 1px solid #D1D1D1;
     padding: 10px;
     text-align: justify;
@@ -112,15 +113,15 @@ nav .nav-bar{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Asegura que el elemento ocupe toda la altura del contenedor */
-    margin: 0; /* Elimina márgenes por defecto */
+    height: 100%; 
+    margin: 0; 
 }
 
 .item-1 { /*section 1*/
     grid-column: 2 / 5;
     margin: 0;
     grid-row: span 1;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -176,7 +177,7 @@ nav .nav-bar{
 
 .testimonio {
     border: 2px solid #ccc; 
-    padding: 15px; 
+    padding: 10px; 
     margin-top: 20px; 
     background-color: #dbdbdb; 
     border-radius: 8px; 
@@ -187,14 +188,15 @@ nav .nav-bar{
     display: inline-block;
     vertical-align: middle; 
     color: #000000;
+    margin: 5px;
 }
-
 
 .testimonio h5 { 
     margin: 10px 0 0 0;
     font-size: 1em;
     color: #555; 
     font-style: italic; 
+    font-family:Cambria;
 }
 
 .main-grid {
@@ -220,6 +222,7 @@ footer {
     padding: 20px;
     background-color: #2C3E50;
     border-radius: 4px;
+    height: 90px;
 }
 
 footer h4 {
@@ -296,7 +299,7 @@ input, textarea{
     width: 47%;
 }
 
-.fondo img{
+#fondo img{
     width: 400px;
     height: 200px;
 }
